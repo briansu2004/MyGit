@@ -1,0 +1,3 @@
+[submodule "SubModule/MyAngular"]
+	path = SubModule/MyAngular
+	url = https://github.com/briansu2004/MyAngular
