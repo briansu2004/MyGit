@@ -4,35 +4,56 @@ My Git
 
 Very important to work in a team :-)
 
-## How to git 撤销上一次 push 的版本!
+## git push -f
 
-https://blog.csdn.net/m0_37605197/article/details/110919455
+- What is `git push -f`?
+
+You cannot push if someone pushed some commits on the same branch before you because Git cannot guess how to fix the conflict.
+
+`git push -f` will withdraw your colleagues commits and replace the whole history with yours. This should never be used.
+
+- What are the differences between `git push -f` and `git push`?
+
+- How to disable `git push -f` or prevent `git push -f`?
+
+If you have the appropriate permissions on your "central" git repository, you can disable force push by git config --system receive.denyNonFastForwards true.
+
+For Github Enterprise, you can follow instructions on this page to disable force push.
+
+For other Github repositories (the ones that most of us use daily), there are no ways to disable force push. Some workarounds include:
+
+- Limiting the group of people will push privileges. Other contributions will have to come in as Pull Requests.
+- Set up an intermediate repo on your side with a pre-receive hook to prevent force push.
+
+## How to git 撤销上一次 push 的版本
+
+<https://blog.csdn.net/m0_37605197/article/details/110919455>
 
 可以用 git log 查看你要回到的那个版本
 
 接着用
 
-```
+```dos
 git reset --hard HEAD^ 回退到上个版本
 ```
 
 or
 
-```
+```dos
 git reset --hard commit_id 退到/进到 指定commit_id
 ```
 
 最后将本地的修改提交到远程
 
-```
+```dos
 git push origin HEAD --force
 ```
 
-### Proof
+- Proof
 
 This has been verified at Mar 27, 2022!
 
-```
+```dos
 git log
 git reset --hard 4187b33265e
 git push origin HEAD --force
@@ -51,7 +72,7 @@ git reflog 可以查看所有分支的所有操作记录（包括（包括 commi
 
 经常需要删除 github 的文件或文件夹，如果仅删除文件可能还能在网站里删除（但是当要删除的文件较多的时候，一个一个删除简直要命～～～），但是删除文件夹该怎么办呢？
 
-### 直接在网站里删除的方法如下：
+### 直接在网站里删除的方法如下
 
 点击文件右上角的“删除按钮”，滑到页面最下方点击“commit changes”
 
@@ -61,7 +82,7 @@ git reflog 可以查看所有分支的所有操作记录（包括（包括 commi
 
 首先我们将整个仓库 clone 到本地
 
-git clone https://github.com/***
+git clone <https://github.com/>***
 
 在 clone 下来的本地仓库里初始化
 
@@ -93,9 +114,9 @@ git push origin master
 
 ## How to git 获取特定的 commit
 
-### git reset --hard [commit_id]
+`git reset --hard [commit_id]`
 
-### Scenario
+- Scenario
 
 ![](image/README/git_commit.png)
 
@@ -105,7 +126,7 @@ But the commits after don't work :-)
 
 I need to pick the work commit then build and deploy.
 
-### Proof
+- Proof
 
 Do a fresh glone -> retrieve the particular commit -> copy to the new branch -> build and trigger from this new branch -> test and verify -> close
 
@@ -137,7 +158,7 @@ git push --set-upstream origin v1.0
 
 Output:
 
-```
+```dos
 C:\Code\MyGit>cd C:\_RepoFresh\#2
 
 C:\_RepoFresh\#2>git clone https://github.com/telus/bdd-jest-merlin-cloud-bss-bridge.git
