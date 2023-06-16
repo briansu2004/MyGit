@@ -18,7 +18,7 @@ in Unix/Mac
 git branch | grep -v "master" | xargs git branch -D
 ```
 
-## git squash
+## git squash (method #1)
 
 How to git squash?
 
@@ -42,6 +42,16 @@ git push -f
 ### After
 
 ![1678405098807](image/README/1678405098807.png)
+
+
+## git squash (method #2)
+
+
+```dos
+git checkout --orphan <old_branch>
+
+git push -u origin <branch-name>
+```
 
 ## git push -f
 
