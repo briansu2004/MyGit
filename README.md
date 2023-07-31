@@ -30,6 +30,24 @@ How to git squash?
 
 ### Commands
 
+Using git rev-list:
+
+You can use git rev-list to count the number of commits on the branch:
+
+```bash
+git rev-list --count HEAD
+```
+
+Using git log:
+
+Run the following command to see the commit history and count the number of commits:
+
+```bash
+git log --oneline
+```
+
+Count the number of commit lines displayed in the output. This will be the value of n that you need for the interactive rebase.
+
 6 - 1 = 5
 
 ```dos
@@ -43,9 +61,7 @@ git push -f
 
 ![1678405098807](image/README/1678405098807.png)
 
-
 ## git squash (method #2)
-
 
 ```dos
 git checkout --orphan <old_branch>
