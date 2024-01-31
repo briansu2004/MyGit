@@ -2,22 +2,24 @@
 
 My Git
 
-[Tricks on removing remote branches](0xx_RemoveRemoteBranch.md)
+[How to recover deleted git local branch?](011_UndoLocalBranchDelete.md)
 
-[Resolve the repo data issue](0xx_GitDataIssue.md)
+[Tricks on removing remote branches](010_RemoveRemoteBranch.md)
 
-[Handel multiple Git IDs](0xx_MultipleGitIDs.md)
+[Resolve the repo data issue](009_GitDataIssue.md)
 
-[Quickly delete all local feature branches](0xx_RemoveLocalBranch.md)
+[Handel multiple Git IDs](008_MultipleGitIDs.md)
 
-[Git Squash](0xx_GitSquash.md)
+[Quickly delete all local feature branches](007_RemoveLocalBranch.md)
 
-[git push -f](0xx_PushF.md)
+[Git Squash](006_GitSquash.md)
 
-[How to git 撤销上一次 push 的版本](00x_UnPush.md)
+[git push -f](005_PushF.md)
 
-[How to 删除 github 文件/文件夹](0xx_RemoveGitHubFolder.md)
+[How to git 撤销上一次 push 的版本](004_UnPush.md)
 
-[How to git 获取特定的 commit](0xx_GetGitCommit.md)
+[How to 删除 github 文件/文件夹](003_RemoveGitHubFolder.md)
 
-[How to remove the git tag?](00x_RemoveGitTag.md)
+[How to git 获取特定的 commit](002_GetGitCommit.md)
+
+[How to remove the git tag?](001_RemoveGitTag.md)
