@@ -2,6 +2,8 @@
 
 My Git
 
+[How to clone the large repos](012_CloneLargeRepo.md)
+
 [How to recover deleted git local branch?](011_UndoLocalBranchDelete.md)
 
 [Tricks on removing remote branches](010_RemoveRemoteBranch.md)
