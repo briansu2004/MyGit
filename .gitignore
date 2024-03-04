@@ -15,7 +15,7 @@ node_modules
 chrome-profiler-events*.json
 
 # IDEs and editors
-.vscode
+.vscode/
 .idea
 .project
 .classpath

@@ -15,3 +15,13 @@ Alternative 2 ways:
 
 - git clone --filter=blob:none <repo_url>
 - git clone --filter=tree:0 <repo_url>
+
+## Final Solution
+
+If above solution still won't work, 
+
+- Download all the files
+- Create a new repo
+- Copy all files to the new repo
+- Git push
+- Use the new repo instead
